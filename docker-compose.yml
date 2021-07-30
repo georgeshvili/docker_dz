@@ -1,13 +1,18 @@
 version: "3"
 
+volumes:
+ myvolume:
+
 services:
 
  container1:
   build: ./container1
   volumes:
-   - ./myvolume:/change_me_dir
+   - "./myvolume:/change_me_dir"
 
  container2:
   build: ./container2
+  depends_on:
+   - container1
   volumes:
-   - ./myvolume:/change_me_dir
+   - "./myvolume:/change_me_dir"

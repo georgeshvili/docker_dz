@@ -1,2 +1,2 @@
 FROM ubuntu
-CMD chmod +x change_me.txt
+CMD chmod +x ./change_me_dir/change_me.txt
