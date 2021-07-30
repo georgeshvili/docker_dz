@@ -1,13 +1,13 @@
-version: ‘3.1’
+version: "3"
 
 services:
 
-container1:
-build: ./container1
-volumes:
-- ./myvolume:/change_me_dir
+ container1:
+  build: ./container1
+  volumes:
+   - ./myvolume:/change_me_dir
 
-container2:
-build: ./container2
-volumes:
-- ./myvolume:/change_me_dir
+ container2:
+  build: ./container2
+  volumes:
+   - ./myvolume:/change_me_dir
